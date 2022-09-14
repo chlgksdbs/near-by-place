@@ -4,7 +4,7 @@
 
 - [캡스톤 프로젝트 계획서]()
 
-## Team Members
+## 👨‍👨‍👦‍👦 Team Members
 
 ### 썸이즈백(Sum is 100)
 
@@ -15,9 +15,9 @@
 
 <br>
 
-## Infra Stack
+## 🔧 Infra Stack
 
-- Frontend : <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=JavaScript&logoColor=white"/> <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=React&logoColor=white"/> <img src="https://img.shields.io/badge/Recoil-000000?style=flat-square&logo=Coil&logoColor=white"/>
+- Frontend : <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=JavaScript&logoColor=white"/> <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=React&logoColor=white"/> <img src="https://img.shields.io/badge/Recoil-000000?style=flat-square&logo=Recoil&logoColor=white"/>
 
 - Backend : <img src="https://img.shields.io/badge/Java-007396?style=flat-square&logo=java&logoColor=white"/> <img src="https://img.shields.io/badge/Spring-6DB33F?style=flat-square&logo=Spring&logoColor=white"/> <img src="https://img.shields.io/badge/Spring Data JPA-6DB33F?style=flat-square&logo=springboot&logoColor=white"/>
 
@@ -25,4 +25,4 @@
 
 <br>
 
-## How to Run ?
+## 💻 How to Run ?
