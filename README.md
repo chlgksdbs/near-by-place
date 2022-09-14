@@ -1,10 +1,8 @@
 # near-by-place
 
-공공장소 및 시설 사용 매칭 서비스
+:fountain: 공공장소 및 시설 사용 매칭 서비스
 
 - [캡스톤 프로젝트 계획서]()
-
-<br>
 
 ## Team Members
 
