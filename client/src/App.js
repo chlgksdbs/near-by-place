@@ -6,8 +6,12 @@ import axios from 'axios';
 function App() {
    const [hello, setHello] = useState('')
 
+    const client = axios.create({
+        baseURL: 'http://localhost:8080',
+        withCredentials: true,});
+
     useEffect(() => {
-        axios.get('/api/hello')
+        client.get('/api/hello')
         .then(response => setHello(response.data))
         .catch(error => console.log(error))
     }, []);
