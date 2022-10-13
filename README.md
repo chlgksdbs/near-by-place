@@ -27,4 +27,18 @@
 
 ## 💻 How to Run ?
 
+Frontend
 
+```
+$ cd client
+$ npm start
+```
+
+Backend
+
+```
+$ cd server
+$ ./gradlew.bat build
+$ cd build/libs
+$ java -jar nearbyplace-0.0.1-SNAPSHOT.jar
+```
