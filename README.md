@@ -1,6 +1,6 @@
 # <img src="https://user-images.githubusercontent.com/96401350/195609735-f7627dbb-c832-4d1e-ac2b-705b62a81711.png" width="30" height="30"/> Near by Place
 
-⛲ 공공장소 및 시설 사용 매칭 서비스
+공공장소 및 시설 사용 매칭 서비스
 
 - [캡스톤 프로젝트 계획서](./.github/report.pdf)
 
