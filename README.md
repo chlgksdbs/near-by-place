@@ -1,4 +1,4 @@
-# <img src="https://github.com/chlgksdbs/near-by-place/blob/fb4c4dc8daae437d622b75ae6ad14a28ea91c260/nearbyplace-logo(transparent).png" width="30" height="30"/> Near by Place
+# <img src="https://github.com/chlgksdbs/near-by-place/blob/20db9836beb097113aba159da1ea909b022a983f/nearbyplace-logo(transparent).png" width="30" height="30"/> Near by Place
 
 ⛲ 공공장소 및 시설 사용 매칭 서비스
 
