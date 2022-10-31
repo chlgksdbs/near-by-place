@@ -3,7 +3,7 @@ import Slider from "react-slick";
 
 export const Container = styled.div`
     display: flex;
-    width: 100vw;
+    width: 100%;
     height: 400px;
     justify-content: space-around;
 `;
@@ -13,7 +13,7 @@ export const CarouselSlider = styled(Slider)`
     height: 400px;
   
     .slick-list {
-      height: 400px;
+        height: 400px;
     }
 `;
 
