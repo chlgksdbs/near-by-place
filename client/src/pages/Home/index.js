@@ -1,11 +1,11 @@
 import React from 'react';
 
-import Header from "../components/Header";
-import Carousel from "../components/Carousel";
-import SearchBar from "../components/SearchBar";
-import Card from "../components/common/Card";
-import PlaceImg from "../assets/place.png";
-import LocationImg from "../assets/location.png";
+import Header from "../../components/Header";
+import Carousel from "../../components/Carousel";
+import SearchBar from "../../components/SearchBar";
+import Card from "../../components/common/Card";
+import PlaceImg from "../../assets/place.png";
+import LocationImg from "../../assets/location.png";
 import {CardBox, CardContainer, CardTitle, Container, MoreButton} from "./style";
 
 const Home = () => {

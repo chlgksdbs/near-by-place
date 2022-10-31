@@ -12,7 +12,8 @@ export const SearchArea = styled.input`
     width: 800px;
     height: 40px;
     padding-left: 10px;
-    border: 1px solid #000;
+    border: 2px solid #000;
+    border-radius: 10px;
 `;
 
 export const SearchIcon = styled.img`
