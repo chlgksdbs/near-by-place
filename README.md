@@ -1,12 +1,12 @@
-# near-by-place
+# <img src="https://user-images.githubusercontent.com/96401350/195609735-f7627dbb-c832-4d1e-ac2b-705b62a81711.png" width="30" height="30"/> Near by Place
 
-⛲ 공공장소 및 시설 사용 매칭 서비스
+공공장소 및 시설 사용 매칭 서비스
 
-- [캡스톤 프로젝트 계획서]()
+- [캡스톤 프로젝트 계획서](./.github/report.pdf)
 
 ## 👨‍👨‍👦‍👦 Team Members
 
-### 썸이즈백(Sum is 100)
+### <img src="https://user-images.githubusercontent.com/96401350/195609949-bc20c601-5ccb-4f39-bdf7-58662cd29152.png" width="30" height="30"/> 썸이즈백(Sum is 100)
 
 - 최한윤 [@chlgksdbs](https://github.com/chlgksdbs)
 - 권영기 [@kykapple](https://github.com/kykapple)
@@ -27,4 +27,18 @@
 
 ## 💻 How to Run ?
 
+Frontend
 
+```
+$ cd client
+$ npm start
+```
+
+Backend
+
+```
+$ cd server
+$ ./gradlew.bat build
+$ cd build/libs
+$ java -jar nearbyplace-0.0.1-SNAPSHOT.jar
+```
