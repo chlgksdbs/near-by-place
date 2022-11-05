@@ -13,26 +13,20 @@ import java.time.LocalDate;
 public class Review {
     @Id
     @GeneratedValue
-    @Column(name = "ID")
+    @Column(name = "id")
     private Long id;
 
-    @Column(name = "USER_ID")
-    private Long userId;
-
-    @Column(name = "PLACE_ID")
-    private Long placeId;
-
-    @Column(name = "CONTENT", nullable = false, length = 50)
+    @Column(name = "content", nullable = false, length = 50)
     private String content;
 
-    @Column(name = "CREATED_AT")
-    private LocalDate cratedAt;
+    @Column(name = "created_at")
+    private LocalDate createdAt;
 
     @ManyToOne
-    @JoinColumn(name = "ID")
+    @JoinColumn(name = "user_id")
     private User user;
 
     @ManyToOne
-    @JoinColumn(name = "ID")
+    @JoinColumn(name = "place_id")
     private Place place;
 }

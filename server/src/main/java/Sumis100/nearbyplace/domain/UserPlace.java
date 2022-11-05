@@ -12,20 +12,14 @@ import javax.persistence.*;
 public class UserPlace {
     @Id
     @GeneratedValue
-    @Column(name = "ID")
+    @Column(name = "id")
     private Long id;
 
-    @Column(name = "USER_ID")
-    private Long userId;
-
-    @Column(name = "PLACE_ID")
-    private Long placeId;
-
     @ManyToOne
-    @JoinColumn(name = "ID")
+    @JoinColumn(name = "user_id")
     private User user;
 
     @ManyToOne
-    @JoinColumn(name = "ID")
+    @JoinColumn(name = "place_id")
     private Place place;
 }

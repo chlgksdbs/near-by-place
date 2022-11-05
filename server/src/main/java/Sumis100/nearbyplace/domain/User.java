@@ -15,22 +15,22 @@ public class User {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "ID")
+    @Column(name = "id")
     private Long id;
 
-    @Column(name = "NICKNAME")
+    @Column(name = "nickname")
     private String nickname;
 
-    @Column(name = "ADDRESS")
+    @Column(name = "address")
     private String address;
 
-    @Column(name = "DESCRIPTION")
+    @Column(name = "description")
     private String description;
 
-    @Column(name = "STRATEGY")
+    @Column(name = "strategy")
     private String strategy;
 
-    @OneToMany(mappedBy = "user") @JoinColumn(name = "USER_ID")
+    @OneToMany(mappedBy = "user") @JoinColumn(name = "user_id")
     private List<MatchList> matchLists = new ArrayList<>();
 
     @OneToMany(mappedBy = "user")

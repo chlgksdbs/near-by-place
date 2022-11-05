@@ -15,30 +15,30 @@ public class MatchList {
 
     @Id
     @GeneratedValue
-    @Column(name = "ID")
+    @Column(name = "id")
     private Long id;
 
-    @Column(name = "USER_ID")
+    @Column(name = "user_id")
     private Long userId;
 
-    @Column(name = "ADDRESS")
+    @Column(name = "address")
     private String address;
 
-    @Column(name = "DESCRIPTION")
+    @Column(name = "description")
     private String description;
 
-    @Column(name = "CURRENT_MEMBER")
+    @Column(name = "current_member")
     private Long currentMember;
 
-    @Column(name = "MAX_MEMBER")
+    @Column(name = "max_member")
     private Long maxMember;
 
     @CreationTimestamp
-    @Column(name = "START_AT")
+    @Column(name = "start_at")
     private LocalDate statAt;
 
     @CreationTimestamp
-    @Column(name = "END_AT")
+    @Column(name = "end_at")
     private LocalDate endAt;
 
     @ManyToOne
