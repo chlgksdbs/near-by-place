@@ -29,11 +29,12 @@ public class User {
     @Column(name = "strategy")
     private String strategy;
 
+    // TODO 이거 다대다가 되어야 하지 않을까? 게시글 참여자도 있으니까..?
     @OneToMany(mappedBy = "user", fetch = FetchType.LAZY)
-    private List<MatchList> matchLists = new ArrayList<>();
+    private List<MatchPost> matchPosts = new ArrayList<>();
 
     @OneToMany(mappedBy = "user", fetch = FetchType.LAZY)
-    private List<UserPlace> userPlaces = new ArrayList<>();
+    private List<UserMatchPost> userMatchPosts = new ArrayList<>();
 
     @OneToMany(mappedBy = "user", fetch = FetchType.LAZY)
     private List<Review> reviews = new ArrayList<>();

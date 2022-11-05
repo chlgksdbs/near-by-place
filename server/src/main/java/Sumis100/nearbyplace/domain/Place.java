@@ -35,10 +35,10 @@ public class Place {
     @Column(name = "grade_avg")
     private Long gradeAvg;
 
-    @OneToMany(mappedBy = "place")
-    private List<Review> reviewList = new ArrayList<>();
+    @OneToMany(mappedBy = "place", fetch = FetchType.LAZY)
+    private List<Review> reviews = new ArrayList<>();
 
-    @OneToMany(mappedBy = "place")
-    private List<UserPlace> userPlaceList = new ArrayList<>();
+    @OneToMany(mappedBy = "place", fetch = FetchType.LAZY)
+    private List<MatchPost> matchPosts = new ArrayList<>();
 
 }
