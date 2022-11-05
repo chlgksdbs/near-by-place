@@ -8,7 +8,7 @@ import {
     MatchNumber, MatchLeaderInput, MatchNumberInput, ButtonContainer, CancelButton, CompleteButton
 } from "./style";
 
-const CreateMatch = () => {
+const CreateMatch = (props) => {
     return (
         <Container>
             <MatchLeader>
@@ -25,8 +25,8 @@ const CreateMatch = () => {
                 <MatchInfo>명</MatchInfo>
             </MatchNumber>
             <ButtonContainer>
-                <CancelButton>취소</CancelButton>
-                <CompleteButton>완료</CompleteButton>
+                <CancelButton onClick={props.hideModal}>취소</CancelButton>
+                <CompleteButton onClick={props.createMatch}>완료</CompleteButton>
             </ButtonContainer>
         </Container>
     )

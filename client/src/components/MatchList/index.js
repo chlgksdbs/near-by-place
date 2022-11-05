@@ -50,8 +50,16 @@ const testMatchList = [
 const MatchList = () => {
     const [createMatchModalVisible, setCreateMatchModalVisible] = useState(false);
 
-    const handleCreateMatch = (match) => {
+    const toggleCreateMatchModal = () => {
         setCreateMatchModalVisible(prev => !prev);
+    };
+
+    const hideCreateMatchModal = () => {
+        setCreateMatchModalVisible(false)
+    };
+
+    const handleCreateMatch = () => {
+        // TODO: 모집글 생성 API 연동
     };
 
     return (
@@ -59,7 +67,7 @@ const MatchList = () => {
             <Container>
                 <TitleContainer>
                     <Title>매칭 리스트</Title>
-                    <CreateButton onClick={handleCreateMatch}>추가</CreateButton>
+                    <CreateButton onClick={toggleCreateMatchModal}>추가</CreateButton>
                 </TitleContainer>
                 <MatchContainer>
                     {testMatchList.map((match) => (
@@ -85,7 +93,7 @@ const MatchList = () => {
                     ))}
                 </MatchContainer>
             </Container>
-            {!createMatchModalVisible ? <CreateMatchModal /> : null}
+            {createMatchModalVisible ? <CreateMatchModal createMatch={handleCreateMatch} hideModal={hideCreateMatchModal} /> : null}
         </>
     )
 };
