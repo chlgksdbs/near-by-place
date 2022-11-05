@@ -23,8 +23,14 @@ export const MenuBox = styled.div`
 `;
 
 export const Menu = styled.div`
+    width: 70px;
     font-weight: bold;
     cursor: pointer;
+  
+    &.selected {
+        color: #6294f4;
+        border-bottom: 2px solid #6294f4;
+    }
     
     ${LiftUp}
 `;
