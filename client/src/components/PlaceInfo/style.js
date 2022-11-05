@@ -8,6 +8,8 @@ export const Container = styled.div`
 `;
 
 export const MainImage = styled.img`    
+    max-width: 650px;
+    max-height: 415px;
 `;
 
 export const SubImageContainer = styled.div`
@@ -21,6 +23,7 @@ export const SubImage = styled.img`
     width: 90px;
     height: 90px;
     margin-right: 20px;
+    cursor: pointer;
 `;
 
 export const InfoContainer = styled.div`

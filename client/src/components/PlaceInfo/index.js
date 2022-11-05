@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 
 import TestImg from "../../assets/test.png";
 import {
@@ -24,6 +24,11 @@ const testPlace = {
 
 const PlaceInfo = () => {
     const ACTIVATE = "activate";
+    const [mainImage, setMainImage] = useState(testPlace.images[0]);
+
+    const handleMageImage = (image) => {
+        setMainImage(image);
+    };
 
     const handleBookmark = (event) => {
         const classList = event.target.classList;
@@ -34,11 +39,10 @@ const PlaceInfo = () => {
 
     return (
         <Container>
-            <MainImage src={testPlace.images[0]} />
+            <MainImage src={mainImage} />
             <SubImageContainer>
                 {testPlace.images
-                    .slice(1)
-                    .map(place => <SubImage src={place} />)}
+                    .map(place => <SubImage src={place} onClick={() => handleMageImage(place)} />)}
             </SubImageContainer>
             <InfoContainer>
                 <TitleBox>
