@@ -13,7 +13,7 @@ export const MainImage = styled.img`
 export const SubImageContainer = styled.div`
     display: flex;
     flex-direction: row;
-    width: 550px;
+    width: 650px;
     margin-top: 30px;
 `;
 
@@ -25,7 +25,7 @@ export const SubImage = styled.img`
 
 export const InfoContainer = styled.div`
     padding-bottom: 20px;
-    max-width: 550px;
+    max-width: 650px;
     border-bottom: 2px solid #000;
 `;
 
