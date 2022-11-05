@@ -1,4 +1,6 @@
 import styled from "@emotion/styled";
+import EmptyHeart from "../../assets/emptyHeart.png";
+import Heart from "../../assets/heart.png";
 
 export const Container = styled.div`
     display: flex;
@@ -33,6 +35,13 @@ export const TitleBox = styled.div`
     margin-top: 25px;
     padding-bottom: 10px;
     border-bottom: 2px solid #000;
+    justify-content: space-between;
+    align-items: end;
+  
+    & > div {
+        display: flex;
+        flex-direction: row;
+    }
 `;
 
 export const Title = styled.div`
@@ -45,6 +54,18 @@ export const Grade = styled.div`
     font-weight: 540;
     color: #FF9900;
     margin-left: 10px;
+`;
+
+export const Bookmark = styled.div`
+    width: 24px;
+    height: 24px;
+    background-image: url(${EmptyHeart});
+    margin-right: auto;
+    cursor: pointer;
+  
+    &.activate {
+        background-image: url(${Heart});
+    }
 `;
 
 export const DetailBox = styled.div`

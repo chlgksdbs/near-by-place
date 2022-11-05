@@ -2,6 +2,7 @@ import React from "react";
 
 import TestImg from "../../assets/test.png";
 import {
+    Bookmark,
     Container, Detail,
     DetailBox, DetailTitleBox,
     Grade,
@@ -22,6 +23,15 @@ const testPlace = {
 };
 
 const PlaceInfo = () => {
+    const ACTIVATE = "activate";
+
+    const handleBookmark = (event) => {
+        const classList = event.target.classList;
+        const isActivate = classList.contains(ACTIVATE);
+
+        isActivate ? classList.remove(ACTIVATE) : classList.add(ACTIVATE);
+    }
+
     return (
         <Container>
             <MainImage src={testPlace.images[0]} />
@@ -32,8 +42,13 @@ const PlaceInfo = () => {
             </SubImageContainer>
             <InfoContainer>
                 <TitleBox>
-                    <Title>{testPlace.name}</Title>
-                    <Grade>{testPlace.grade_avg}</Grade>
+                    <div>
+                        <Title>{testPlace.name}</Title>
+                        <Grade>{testPlace.grade_avg}</Grade>
+                    </div>
+                    <div>
+                        <Bookmark onClick={handleBookmark} />
+                    </div>
                 </TitleBox>
                 <DetailBox>
                     <DetailTitleBox>
