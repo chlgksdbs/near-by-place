@@ -1,6 +1,16 @@
-import React from "react";
+import React, {useState} from "react";
 
-import {Container, MatchArticle, MatchContainer, MatchDetail, MatchInfo, ParticipateButton, Title} from "./style";
+import {
+    Container, CreateButton,
+    MatchArticle,
+    MatchContainer,
+    MatchDetail,
+    MatchInfo,
+    ParticipateButton,
+    Title,
+    TitleContainer
+} from "./style";
+import CreateMatchModal from "../Modal/CreateMatch";
 
 const testMatchList = [
     {
@@ -38,11 +48,19 @@ const testMatchList = [
 ]
 
 const MatchList = () => {
+    const [createMatchModalVisible, setCreateMatchModalVisible] = useState(false);
+
+    const handleCreateMatch = (match) => {
+        setCreateMatchModalVisible(prev => !prev);
+    };
 
     return (
         <>
             <Container>
-                <Title>매칭 리스트</Title>
+                <TitleContainer>
+                    <Title>매칭 리스트</Title>
+                    <CreateButton onClick={handleCreateMatch}>추가</CreateButton>
+                </TitleContainer>
                 <MatchContainer>
                     {testMatchList.map((match) => (
                         <MatchArticle>
@@ -67,6 +85,7 @@ const MatchList = () => {
                     ))}
                 </MatchContainer>
             </Container>
+            {!createMatchModalVisible ? <CreateMatchModal /> : null}
         </>
     )
 };
