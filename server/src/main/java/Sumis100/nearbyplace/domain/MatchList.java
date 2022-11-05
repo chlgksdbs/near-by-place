@@ -14,8 +14,7 @@ import java.time.LocalDate;
 public class MatchList {
 
     @Id
-    @GeneratedValue
-    @Column(name = "id")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @Column(name = "user_id")
@@ -33,16 +32,14 @@ public class MatchList {
     @Column(name = "max_member")
     private Long maxMember;
 
-    @CreationTimestamp
     @Column(name = "start_at")
     private LocalDate statAt;
 
-    @CreationTimestamp
     @Column(name = "end_at")
     private LocalDate endAt;
 
-    @ManyToOne
-    @JoinColumn(name = "ID")
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "user_id", insertable = false, updatable = false)
     private User user;
 
 }

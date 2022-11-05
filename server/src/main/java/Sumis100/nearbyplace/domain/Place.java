@@ -4,18 +4,17 @@ import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Getter
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 public class Place {
+
     @Id
-    @GeneratedValue
-    @Column(name = "id")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @Column(name = "name")
@@ -35,5 +34,11 @@ public class Place {
 
     @Column(name = "grade_avg")
     private Long gradeAvg;
+
+    @OneToMany(mappedBy = "place")
+    private List<Review> reviewList = new ArrayList<>();
+
+    @OneToMany(mappedBy = "place")
+    private List<UserPlace> userPlaceList = new ArrayList<>();
 
 }
