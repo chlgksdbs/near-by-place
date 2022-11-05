@@ -4,14 +4,13 @@ import {LiftUp} from "../../styles/common";
 export const Container = styled.div`
     display: flex;
     flex-direction: row;
-    width: 50vw;
-    justify-content: space-around;
+    width: 80vw;
 `;
 
 export const SideBar = styled.div`
     width: 90px;
     height: 70vh;
-    margin-top: 80px;
+    margin: 80px 0 0 150px;
     border-right: 2px solid #000;
 `;
 
@@ -36,5 +35,7 @@ export const Menu = styled.div`
 `;
 
 export const InfoContainer = styled.div`
-    
+    width: 800px;
+    height: 70vh;
+    margin: 80px 0 0 50px;
 `;
