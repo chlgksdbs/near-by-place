@@ -33,20 +33,6 @@ export const MatchArticle = styled.div`
     padding: 15px 20px 10px 20px;
     background-color: #eeeeee;
     justify-content: space-around;
-    cursor: pointer;
-
-    :hover {
-        animation: lift-up 0.2s forwards;
-    }
-  
-    @keyframes lift-up {
-        0% {
-          transform: translateY(0);
-        }
-        100% {
-          transform: translateY(-6px);
-        }
-    }
 `;
 
 export const MatchDetail = styled.div`
@@ -60,4 +46,28 @@ export const MatchInfo = styled.div`
     font-weight: bold;
     min-width: 75px;
     margin-right: 15px;
+`;
+
+export const ParticipateButton = styled.div`
+    width: 36px;
+    padding-bottom: 3px;
+    margin-left: auto;
+    color: #0038ff;
+    font-weight: bold;
+    border-bottom: 2px solid #0038ff;
+
+    cursor: pointer;
+    
+    :hover {
+        animation: lift-up 0.2s forwards;
+    }
+    
+    @keyframes lift-up {
+        0% {
+          transform: translateY(0);
+        }
+        100% {
+          transform: translateY(-6px);
+        }
+    }
 `;
