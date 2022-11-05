@@ -1,5 +1,7 @@
 import styled from "@emotion/styled";
 import { css } from "@emotion/react";
+import {LiftUp} from "../../../styles/common";
+import {BLUE, RED} from "../../../styles/color";
 
 export const Container = styled.div`
     position: absolute;
@@ -88,18 +90,19 @@ const Button = css`
     font-weight: bold;
     cursor: pointer;
     margin-left: 20px;
+    ${LiftUp}
 `;
 
 export const CancelButton = styled.div`
     margin-left: 40px;
-    color: #ff0000;
-    border-bottom: 2px solid #ff0000;
+    color: ${RED};
+    border-bottom: 2px solid ${RED};
     ${Button}
 `;
 
 export const CompleteButton = styled.div`
     margin-right: 20px;
-    color: #0038ff;
-    border-bottom: 2px solid #0038ff;
+    color: ${BLUE};
+    border-bottom: 2px solid ${BLUE};
     ${Button};
 `;

@@ -1,4 +1,6 @@
 import styled from "@emotion/styled";
+import {LiftUp} from "../../styles/common";
+import {BLUE} from "../../styles/color";
 
 export const Container = styled.div`
     display: flex;
@@ -27,8 +29,8 @@ export const CreateButton = styled.div`
     padding-bottom: 3px;
     margin: 40px 0 0 10px;
     font-weight: bold;
-    color: #0038ff;
-    border-bottom: 2px solid #0038ff;
+    color: ${BLUE};
+    border-bottom: 2px solid ${BLUE};
 
     cursor: pointer;
     
@@ -82,22 +84,10 @@ export const ParticipateButton = styled.div`
     width: 36px;
     padding-bottom: 3px;
     margin-left: auto;
-    color: #0038ff;
+    color: ${BLUE};
     font-weight: bold;
-    border-bottom: 2px solid #0038ff;
-
+    border-bottom: 2px solid ${BLUE};
     cursor: pointer;
     
-    :hover {
-        animation: lift-up 0.2s forwards;
-    }
-    
-    @keyframes lift-up {
-        0% {
-          transform: translateY(0);
-        }
-        100% {
-          transform: translateY(-6px);
-        }
-    }
+    ${LiftUp}
 `;
