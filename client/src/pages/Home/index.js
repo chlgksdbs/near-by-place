@@ -3,7 +3,7 @@ import React from 'react';
 import Header from "../../components/Header";
 import Carousel from "../../components/Carousel";
 import SearchBar from "../../components/SearchBar";
-import Card from "../../components/common/Card";
+import Card from "../../components/Card/RecommendedPlace";
 import PlaceImg from "../../assets/place.png";
 import LocationImg from "../../assets/location.png";
 import {CardBox, CardContainer, CardTitle, Container, MoreButton} from "./style";
