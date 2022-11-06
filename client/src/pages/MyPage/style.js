@@ -35,7 +35,8 @@ export const Menu = styled.div`
 `;
 
 export const InfoContainer = styled.div`
-    width: 800px;
+    width: 900px;
     height: 70vh;
     margin: 80px 0 0 50px;
+    overflow-y: auto;
 `;
