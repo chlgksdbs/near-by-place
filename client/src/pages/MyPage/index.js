@@ -9,7 +9,7 @@ import Bookmark from "../../components/MyPage/Bookmark";
 const MyPage = () => {
     const menu = [ "내 프로필", "매칭 현황", "매칭 이력", "즐겨찾기" ];
     const pages = [ "profile", "currentMatch", "matchHistory", "bookmark" ];
-    const [selectedMenuIdx, setSelectedMenuIdx] = useState(1);
+    const [selectedMenuIdx, setSelectedMenuIdx] = useState(0);
 
     const showUserInfo = (page) => {
         if (page === "profile") return <Profile />

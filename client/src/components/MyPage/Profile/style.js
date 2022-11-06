@@ -14,7 +14,7 @@ export const InfoContainer = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    height: 420px;
+    height: 400px;
 `;
 
 export const UserInfoBox = styled.div`
@@ -34,6 +34,6 @@ export const UserInfo = styled.div`
 
 export const UserDescription = styled.div`
     width: 450px;
-    height: 170px;
+    height: 160px;
     border: 2px solid #000;
 `;
