@@ -7,6 +7,9 @@ import Sumis100.nearbyplace.service.dto.PlaceResponseConverter;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.List;
+import java.util.stream.Collectors;
+
 @Service
 @Transactional(readOnly = true)
 public class PlaceService {
@@ -19,10 +22,15 @@ public class PlaceService {
         this.placeResponseConverter = placeResponseConverter;
     }
 
-    public PlaceResponse searchPlaceByKeyword(String keyword) {
-        Place place = placeRepository.findByNameContaining(keyword)
-                .orElseThrow(RuntimeException::new);
-
-        return placeResponseConverter.toPlaceResponse(place);
+    public List<PlaceResponse> searchPlaceByKeyword(String keyword) {
+        List<Place> placeList = this.placeRepository.findByNameContaining(keyword);
+        if (placeList == null || placeList.isEmpty())
+            // 찾지 못할 경우 RuntimeException 던져주기
+            throw new RuntimeException();
+        return placeList.stream()
+                .map(placeResponseConverter::toPlaceResponse)
+                .collect(Collectors.toList());
     }
+
+
 }
