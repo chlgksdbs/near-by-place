@@ -19,3 +19,12 @@ export const Account = styled.img`
     height: 40px;
     margin-right: 60px;
 `;
+
+export const LoginButton = styled.div`
+    position: absolute;
+    right: 120px;
+    display: block;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+`;
