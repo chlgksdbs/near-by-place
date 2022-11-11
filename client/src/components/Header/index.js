@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 import { Container, Logo, Account, LoginButton } from './style';
 import LogoImg from '../../assets/logo.png'
@@ -19,10 +20,14 @@ const Header = () => {
     return (
         <>
             <Container>
-                <Logo src={LogoImg} />
+                <Link to="/">
+                    <Logo src={LogoImg} />
+                </Link>
                 <LoginButton onClick={openLoginModal}>로그인</LoginButton>
                 <LoginModal loginModalOn={loginModalOn} closeLoginModal={closeLoginModal} />
-                <Account src={AccountImg} />
+                <Link to="/mypage">
+                    <Account src={AccountImg} />
+                </Link>
             </Container>
         </>
     )
