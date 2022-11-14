@@ -11,7 +11,7 @@ export const Container = styled.div`
 
 export const Logo = styled.img`
     height: 50px;
-    margin-left: 40px;
+    margin-left: 50px;
 `;
 
 export const Account = styled.img`
