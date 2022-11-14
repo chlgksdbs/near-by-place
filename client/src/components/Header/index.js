@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 import { Container, Logo, Account, LoginButton } from './style';
-import LogoImg from '../../assets/logo.png'
+import LogoImg from '../../assets/logo.jpg'
 import LoginModal from '../Modal/Login';
 import AccountImg from '../../assets/account.png';
 

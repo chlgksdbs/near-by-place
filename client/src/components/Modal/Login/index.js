@@ -13,7 +13,7 @@ import {
 } from './style';
 
 import CloseImg from '../../../assets/close.png';
-import FaviconImg from '../../../assets/logo.png';
+import LogoImg from '../../../assets/logo.jpg';
 import EmailImg from '../../../assets/EmailLoginButton.png';
 import KakaoImg from '../../../assets/kakaoLoginButton.png';
 import GoogleImg from '../../../assets/googleLoginButton.png';
@@ -27,7 +27,7 @@ const Login = (props) => {
                     <Container>
                         <CloseIcon src={CloseImg} onClick={props.closeLoginModal} />
                         <ModalContent onClick={props.loginModalOn}>
-                            <LoginLogo src={FaviconImg} />
+                            <LoginLogo src={LogoImg} />
                             <LoginIdInput type="text" placeholder="아이디" />
                             <LoginPwInput type="password" placeholder="비밀번호" />
                             
